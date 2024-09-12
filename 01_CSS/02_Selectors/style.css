@@ -1,0 +1,18 @@
+div{
+    background-color: aquamarine;
+}
+
+/*id Selektor*/
+#subtitles{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*class Selektor*/
+.text{
+    color: blue;
+}
+
+.text p{
+    background-color: rgb(124, 62, 182) ;
+}
