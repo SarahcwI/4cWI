@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div{
+    height: 10vh;
+    width: 50vw;
+}
+
+
+.eins{
+    background-color: aqua;
+    position: relative;
+    left: 20px;
+    top: 40px;
+
+}
+
+.zwei{
+    background-color: red;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+   
+
+}
+
+.drei{
+    background-color: orange;
+    position: fixed;
+    bottom: 190px;
+}
+
+.vier{
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}
+
+.huhu{
+    height: 100vh;
+    background-color: rgb(9, 188, 188);
+}
