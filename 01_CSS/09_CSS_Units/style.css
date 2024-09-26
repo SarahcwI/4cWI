@@ -1,0 +1,25 @@
+*{
+    margin: 0px;;
+}
+
+div{
+    background-color: red;
+    height: 50px;
+}
+
+.container1{
+    width: 50%;
+}
+
+.container2{
+    width: 50vw;
+    height: 70vh;
+    background-color: saddlebrown;
+}
+
+.main{
+    background-color: green;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+}
