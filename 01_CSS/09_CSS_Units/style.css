@@ -1,5 +1,6 @@
 *{
-    margin: 0px;;
+    margin: 0px;
+    font-size: 40px;
 }
 
 div{
@@ -9,12 +10,14 @@ div{
 
 .container1{
     width: 50%;
+    font-size: 1.2em; /*20% mehr als main*/
 }
 
 .container2{
     width: 50vw;
     height: 70vh;
     background-color: saddlebrown;
+    font-size: 0.5rem; /*0.x von dem orginalen (root) schriftgröße */
 }
 
 .main{
@@ -22,4 +25,5 @@ div{
     padding: 10px;
     height: 200px;
     width: 400px;
+    font-size: 1.5rem;
 }
