@@ -8,4 +8,16 @@
     height: 300px;
     padding: 20px;
     margin: 20px;
+    position: relative;
+}
+
+
+.box{
+    background-color: orange;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
 }
