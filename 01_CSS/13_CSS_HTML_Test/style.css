@@ -1,47 +1,46 @@
+/*root font-size = 16px
+1 rem = 16px*/
 
-
-
-
-.container1{
+.container1 {
     background-color: aqua;
-    width: 560px;
-    height: 300px;
-    padding: 20px;
-    margin: 20px;
+    width: 35rem;
+    height: 18.75rem;
+    padding: 1.2rem;
+    margin: 1.2rem;
     position: relative;
 }
 
 
-.box1{
+.box1 {
     background-color: orange;
-    width: 160px;
-    height: 160px;
+    width: 8rem;
+    height: 8rem;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0rem;
+    right: 0rem;
 
 }
 
 
-.container2{
+.container2 {
     background-color: plum;
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0rem;
+    right: 0rem;
 }
 
-.box{
-    width: 40px;
-    height: 40px;
+.box {
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: green;
-    
+
 }
 
-.container3{
+.container3 {
     width: 100vw;
-    height: 120px;
+    height: 7.5rem;
     background-color: yellow;
 
     display: flex;
@@ -49,6 +48,22 @@
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 50px;
+    margin-top: 3.1rem;
 
+}
+
+.numberList{
+    list-style:disc;
+    margin-left: 1rem;
+}
+
+.container4{
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.header{
+    font-size: 1.5rem;
+    background-color: rgb(186, 88, 105);
+    margin-bottom: 1.2rem;
 }
