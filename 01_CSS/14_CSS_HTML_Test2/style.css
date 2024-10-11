@@ -1,0 +1,21 @@
+
+
+.container1{
+    background-color: yellow;
+    width: 100vw;
+    height: 9rem;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    
+}
+
+.box1{
+    background-color: green;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+   
+}
