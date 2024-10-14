@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content:flex-end;
     
+    
 }
 
 .box1{
@@ -27,4 +28,37 @@
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.container3{
+    background-color: cadetblue;
+    width: 30rem;
+    height:20rem;
+    margin-top: 13rem;
+    margin-left: 3rem;
+    position: absolute;
+}
+
+.box2{
+    background-color: orange;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    bottom:0;
+    right: 0; 
+}
+
+
+.header{
+    font-size: 2rem;
+}
+
+.numberlist{
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.textBox{
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
 }
