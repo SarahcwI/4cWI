@@ -1,0 +1,17 @@
+.blueContainer{
+    background-color: cyan;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.greenBox{
+    background-color: green;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
