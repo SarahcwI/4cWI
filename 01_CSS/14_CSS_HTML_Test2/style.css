@@ -4,10 +4,10 @@
     background-color: yellow;
     width: 100vw;
     height: 9rem;
-    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
+    
     
     
 }
@@ -34,9 +34,9 @@
     background-color: cadetblue;
     width: 30rem;
     height:20rem;
-    margin-top: 13rem;
-    margin-left: 3rem;
-    position: absolute;
+    margin-top: 4rem;
+    position: relative;
+    margin-left: 3rem;  
 }
 
 .box2{
