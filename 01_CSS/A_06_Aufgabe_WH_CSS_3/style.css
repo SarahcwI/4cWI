@@ -3,7 +3,7 @@
     flex-direction: row;
     background-color: rgb(235, 235, 235);
     padding-left: 4rem;
-}
+}   
 
 
 .greenbox{
@@ -24,6 +24,28 @@
     border-width: 0.3rem;
     width: 5rem;
     height: 5rem;
-    
-    
+}
+
+.bluebox{
+    background-color: rgb(125, 171, 206);
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.blackbox1{
+    background-color: black;
+    width: 5rem;
+    height: 5rem;
+}
+
+.blackbox2{
+    background-color: black;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    left: -2.5rem;
+    bottom: -5rem;
 }
