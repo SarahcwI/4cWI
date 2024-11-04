@@ -1,0 +1,58 @@
+.lightbluebox{
+    background-color: aqua;
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.bluebox{
+    background-color: blue;
+    width: 10rem;
+    height: 10rem;
+    
+    
+}
+
+.pinkbox{
+    background-color: palevioletred;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: -3rem;
+    right: -3rem;
+
+}
+
+.invisbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(235, 235, 235);
+    padding-left: 4rem;
+    margin-top: 5rem;
+
+}   
+
+
+.greenbox{
+    background-color: green;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    position: relative;
+}
+
+.redbox{
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
