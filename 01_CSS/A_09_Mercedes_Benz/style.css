@@ -2,6 +2,8 @@
     font-size: 17px !important;
 }
 
+
+
 .header {
 
     background-color: black;
@@ -69,4 +71,75 @@
     width: 100%;
     height: 90vh;
     background-size: cover;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 70% !important;
+  }
+
+
+  .content{
+    width: fit-content;
+    position: absolute;
+    margin-top: 16rem;
+    margin-left: 6.5rem;
+  }
+
+  .heading{
+    font-size: 3.4rem !important;
+    padding-bottom: 2rem;
+  }
+
+  .sub-text{
+   font-family: 'Open Sans', sans-serif;
+   padding-bottom: 4.5rem;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.btn1{
+    padding: 1rem;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.05rem;
+    border-radius: 2px;
+}
+
+.btn1:hover{
+    background-color: rgb(218, 218, 218,0.5);
+    padding: 1rem;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0.05rem;
+    border-radius: 2px;
+    transition: 0.5s;
+
+}
+
+.btn2{
+    background-color: rgb(77, 124, 254);;
+    padding: 1rem;
+    border-style: solid;
+    border-color: rgb(77, 124, 254);
+    border-width: 0.05rem;
+    border-radius: 2px;
+    color: white;
+    margin-left: 0.5rem;
+
+}
+
+.btn2:hover{
+    background-color: rgb(36, 69, 160);;
+    padding: 1rem;
+    border-style: solid;
+    border-color: rgb(36, 69, 160);
+    border-width: 0.05rem;
+    border-radius: 2px;
+    transition: 0.5s;
+
 }
