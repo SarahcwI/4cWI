@@ -145,7 +145,7 @@ sup {
 
 }
 
-.FAQ{
+.FAQ {
 
     background-color: rgb(26, 26, 26);
     padding: 0.5rem;
@@ -154,12 +154,14 @@ sup {
     border-width: 0.05rem;
     border-radius: 0.7rem;
     position: fixed;
-    bottom: 1rem;  /* Distance from the bottom */
-    right: 1rem;   /* Distance from the right */
+    bottom: 1rem;
+    /* Distance from the bottom */
+    right: 1rem;
+    /* Distance from the right */
 
 }
 
-.extra-text{
+.extra-text {
     margin-left: 6.5rem;
     margin-right: 6.5rem;
     font-size: 0.7rem !important;
@@ -169,19 +171,53 @@ sup {
     padding-bottom: 4rem;
 }
 
-.buttons-car-types{
+.buttons-car-types {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 2rem
-    
-    
 }
 
 .buttons-car-types img {
     height: 52px;
     width: 150px;
     border: 0.1rem solid rgb(154, 154, 154);
+}
+
+.grid {
+    display: grid;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.grid img {
+    height: 100vh;
+}
+
+.grid-pic1 {
+    grid-column: span 1;
+    width: 500px;
+    overflow: hidden;
+}
+
+.grid-pic2 {
+    grid-column: span 1;
+}
+
+.grid-pic3 {
+    grid-column: span 1;
+}
+
+.reccomendations {
+    font-size: 2.5rem !important;
+    margin-left: 6.5rem;
+    padding-bottom: 2rem;
 }
