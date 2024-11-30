@@ -158,3 +158,12 @@ sup {
     right: 1rem;   /* Distance from the right */
 
 }
+
+.extra-text{
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    font-size: 0.7rem !important;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    line-height: 1rem;
+}
