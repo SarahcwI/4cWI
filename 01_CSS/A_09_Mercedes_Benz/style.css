@@ -192,7 +192,7 @@ sup {
     padding-right: 6.5rem;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(200px, auto);    
 
     column-gap: 2rem;
     row-gap: 1rem;
@@ -200,11 +200,14 @@ sup {
 
 .grid img {
     height: 100vh;
+    width:100%;
+    object-fit: cover;
+
 }
 
 .grid-pic1 {
     grid-column: span 1;
-    width: 500px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -221,3 +224,17 @@ sup {
     margin-left: 6.5rem;
     padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        padding-left: 6.5rem;
+        padding-right: 6.5rem;
+    
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(200px, auto);    
+    
+        column-gap: 2rem;
+        row-gap: 1rem;
+    }
+  }
