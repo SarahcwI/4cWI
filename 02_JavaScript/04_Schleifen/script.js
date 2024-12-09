@@ -9,8 +9,8 @@ console.log(Name + " " + b + a);
 
 //loops 
 
-for(let count = 0; count < 10; count++){
-    console.log(count+1  + " " +Name);
+for(let count = 10; count >= 0; count--){
+    console.log(count  + " " +Name);
 }
 
 console.log("Fertig");
