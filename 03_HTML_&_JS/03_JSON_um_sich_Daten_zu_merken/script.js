@@ -1,5 +1,3 @@
-
-
 let data = [
     { firsname: "Peter", lastname: "John", points: 30 },
     { firsname: "josef", lastname: "bann", points: 40 },
@@ -12,6 +10,11 @@ let data = [
 
 function loadPeople() {
     let html = "";
-    data.forEach(element => {
+    data.forEach((element) => {
         html += "<div>" +element.firsname + " " + element.lastname + " " + element.points + "</div>"});
-}
+
+    document.getElementById("content").innerHTML = html;
+
+    }
+
+loadPeople(); 
