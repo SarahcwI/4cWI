@@ -4,9 +4,15 @@ let todos = [
     { id: 3, title: "Essen", isDone: false },
 ]
 
+let maxId =3;
+
 
 document.getElementById("input").addEventListener("change", function (event) {
     console.log(event.target.value);
+    maxId ++
+    todos.push({id: maxId, title: event.target.value, isDone: false});
+    printTasks();
+    event.target.value = "";
 });
 
 
