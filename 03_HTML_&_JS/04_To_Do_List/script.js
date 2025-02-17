@@ -22,8 +22,10 @@ document.getElementById("input").addEventListener("change", function (event) {
 function printTasks() {
     let html = "";
 
+
     todos.forEach(element => {
-        html += "<div class='task'>" + element.title + " - " + element.isDone + "<div onClick='setIsDone(" + element.id + ")'>Done</div><div>Delete</div></div>";
+        let style = element.isDone ? "green" : "none";
+        html += "<div class='task' style='background-color:" + style + "'>" + element.title + " - " + element.isDone + "<div onClick='setIsDone(" + element.id + ")'>Done</div><div onClick='deleteTask(" + element.id + ")'>Delete</div></div>";
     });
 
     document.getElementById("todos").innerHTML = html;
@@ -35,9 +37,19 @@ function printTasks() {
 function setIsDone(id) {
 
     let todo = todos.find(element => {
-        if (element.id === id){ return true;}
+        if (element.id === id) {
+             return true; }
     })
     todo.isDone = !todo.isDone;
+    printTasks();
+}
+
+function deleteTask(id) {
+    let index = todos.findIndex(element => {
+        if (element.id === id) { 
+            return true; }
+    })
+    todos.splice(index, 1);
     printTasks();
 }
 
