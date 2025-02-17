@@ -4,13 +4,15 @@ let todos = [
     { id: 3, title: "Essen", isDone: false },
 ]
 
-let maxId =3;
+let maxId = 3;
+
+printTasks();
 
 
 document.getElementById("input").addEventListener("change", function (event) {
     console.log(event.target.value);
-    maxId ++
-    todos.push({id: maxId, title: event.target.value, isDone: false});
+    maxId++
+    todos.push({ id: maxId, title: event.target.value, isDone: false });
     printTasks();
     event.target.value = "";
 });
@@ -21,11 +23,22 @@ function printTasks() {
     let html = "";
 
     todos.forEach(element => {
-        html += "<div>" + element.title + " - " + element.isDone + "</div>";
+        html += "<div class='task'>" + element.title + " - " + element.isDone + "<div onClick='setIsDone(" + element.id + ")'>Done</div><div>Delete</div></div>";
     });
 
     document.getElementById("todos").innerHTML = html;
 
 }
 
-printTasks();
+
+
+function setIsDone(id) {
+
+    let todo = todos.find(element => {
+        if (element.id === id){ return true;}
+    })
+    todo.isDone = !todo.isDone;
+    printTasks();
+}
+
+
