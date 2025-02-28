@@ -2,7 +2,7 @@ loadFootballData();
 
 
 function loadFootballData() {
-    fetch("https://api.openligadb.de/getbltable/bl1/2024")
+    fetch(`https://api.openligadb.de/getbltable/bl1/2024`)
         .then((response) => response.json())
         .then((json) => {
             console.log(json);
@@ -17,5 +17,17 @@ function loadFootballData() {
 }
 
 document.getElementById("table").addEventListener("click", (event) => {
-    alert("click");
+    let selectedTeamId =  event.target.getAttribute("data-teamid");
+    console.log("selectedTeamId", selectedTeamId);
+    getNextMatchForTeam(selectedTeamId);
 })
+
+
+
+function getNextMatchForTeam(teamId) {
+    fetch(`https://api.openligadb.de/getnextmatchbyleagueteam/4741/${teamId}`)
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+        })
+}
