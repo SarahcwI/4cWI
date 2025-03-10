@@ -35,4 +35,4 @@ let letVar = 1;
 constVar.name = 'Sally'
 console.log(constVar); 
 
-
+//test RAN
