@@ -1,5 +1,6 @@
 import './App.css'
 import List from './components/List'
+import Card from './components/Card'
 
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
         <List Drink={"Beer"} />       
       </div>
 
-
+    <div className='flex flex-row'>
+      <Card name={"John"} jobtitle={"Developer"} description={"Lorem"} />
+    </div>
     </>
   )
 }
