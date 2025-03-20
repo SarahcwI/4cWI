@@ -1,6 +1,7 @@
 import './App.css'
 import List from './components/List'
 import Card from './components/Card'
+import Button from './components/Button'
 
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
 
     <div className='flex flex-row'>
       <Card name={"John"} jobtitle={"Developer"} description={"Lorem"} />
+    </div>
+
+    <div>
+      <Button description={"Sendar"} />
     </div>
     </>
   )
