@@ -1,26 +1,15 @@
 import './App.css'
-import List from './components/List'
-import Card from './components/Card'
-import Button from './components/Button'
+
+import Components1 from './components/pages/Components1'
+import Card1 from './components/Card1'
 
 
 function App() {
 
   return (
     <>
-      <div>
-        <List Drink={"Coffee"} />
-        <List Drink={"Tea"} />
-        <List Drink={"Beer"} />       
-      </div>
-
-    <div className='flex flex-row'>
-      <Card name={"John"} jobtitle={"Developer"} description={"Lorem"} />
-    </div>
-
-    <div>
-      <Button description={"Sendar"} />
-    </div>
+     <Components1 />
+     <Card1 />
     </>
   )
 }
