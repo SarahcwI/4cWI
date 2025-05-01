@@ -18,7 +18,7 @@ const [people, setPeople] = useState([]);
   return (
     <div>
         <h1>People</h1>
-        <div className='w-40'>
+        <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
             {people.map(person => {
               return <PersonCard name={person.name} titel={person.jobtitel} imageUri={person.avatar}/>
               
