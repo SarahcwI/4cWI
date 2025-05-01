@@ -4,18 +4,20 @@ import { useState } from "react";
 
 export default function PeopleContainer() {
   const [people, setPeople] = useState([]);
+  const [filteredPeople, setFilteredPeople] = useState([]);
 
   useEffect(() => {
     fetch("https://67b84587699a8a7baef35d80.mockapi.io/person").then((res) =>
       res.json().then((data) => {
         setPeople(data);
+        setFilteredPeople(data);
       })
     );
   }, []);
 
   const filterPeople = (filter) => {
     let filtered = people.filter(person => person.name.includes(filter));
-    setPeople(filtered);
+    setFilteredPeople(filtered);
   }
 
 
@@ -36,7 +38,7 @@ export default function PeopleContainer() {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {people.map((person) => {
+        {filteredPeople.map((person) => {
           return (
             <PersonCard
               name={person.name}
