@@ -19,8 +19,8 @@ const [people, setPeople] = useState([]);
     <div>
         <h1>People</h1>
         <div className='w-40'>
-            {people.map(element => {
-              return <div>{element.name}</div>
+            {people.map(person => {
+              return <PersonCard name={person.name} titel={person.jobtitel} imageUri={person.avatar}/>
               
             })}
         </div>
