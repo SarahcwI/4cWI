@@ -4,6 +4,10 @@ import { Link } from "react-router";
 import PersonCard from "../PersonCard";
 
 export default function PeopleContainer() {
+
+  const animal = {"petname": "Bobo", "species": "dog"}
+
+
   const [people, setPeople] = useState([]);
   const [filteredPeople, setFilteredPeople] = useState([]);
 
@@ -50,6 +54,7 @@ export default function PeopleContainer() {
         })}
       </div>
       <Link to="/comp" 
+      state={{animal: animal, titel: "test"}}
       className="
         bg-green-400 
         rounded-2xl 

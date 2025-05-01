@@ -2,10 +2,12 @@ import React from "react";
 import List from "../List";
 import Card from "../Card";
 import Button from "../Button";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
  
 
 export default function Components1() {
+  const location = useLocation()
+  const animal = location.state.animal;
   return (
     <div>
       
@@ -32,6 +34,8 @@ export default function Components1() {
         mt-4
         inline-block"
       >Person</Link>
+
+      <div>Whos a good boy? {animal.petname} is!</div>
       
     </div>
   );
