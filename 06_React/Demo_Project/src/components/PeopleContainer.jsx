@@ -1,14 +1,11 @@
 import React from 'react'
+import PersonCard from './PersonCard'
 
 export default function PeopleContainer() {
   return (
-    <div>
+    <div className='w-40'>
         <h1>People</h1>
-        <div>
-            <div>person1</div>
-            <div>person2</div>
-            <div>person3</div>
-        </div>
+        <PersonCard name="Hans" titel="ceo" imageUri="https://picsum.photos/200/300"/>
     </div>
   )
 }
