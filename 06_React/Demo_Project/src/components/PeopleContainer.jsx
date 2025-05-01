@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
 import PersonCard from './PersonCard'
+import { useState } from 'react';
 
 export default function PeopleContainer() {
 
+const [people, setPeople] = useState([]);
     useEffect(() => {
       fetch("https://67b84587699a8a7baef35d80.mockapi.io/person").then(
         (res) => res.json().then((data) => {
-        console.log(data);
+        setPeople(data);
       })
     );
     }, []);
@@ -14,11 +16,14 @@ export default function PeopleContainer() {
 
   
   return (
-    <div className='w-40'>
+    <div>
         <h1>People</h1>
-        <PersonCard name="Hans" titel="ceo" imageUri="https://picsum.photos/200/300"/>
-        <PersonCard name="Hans" titel="ceo" imageUri="https://picsum.photos/200/300"/>
-        <PersonCard name="Hans" titel="ceo" imageUri="https://picsum.photos/200/300"/>
+        <div className='w-40'>
+            {people.map(element => {
+              return <div>{element.name}</div>
+              
+            })}
+        </div>
     </div>
   )
 }
