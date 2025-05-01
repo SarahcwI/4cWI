@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PersonCard from "./PersonCard";
+import PersonCard from "../PersonCard";
 import { useState } from "react";
 
 export default function PeopleContainer() {
