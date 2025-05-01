@@ -7,10 +7,7 @@ import PeopleContainer from "./components/PeopleContainer";
 function App() {
   return (
     <>
-      {/*<Components1 />
-     <Card1 />*/}
-
-     <PeopleContainer />
+      <PeopleContainer />
     </>
   );
 }
