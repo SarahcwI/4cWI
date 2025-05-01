@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import PersonCard from "../PersonCard";
 import { useState } from "react";
+import { Link } from "react-router";
+import PersonCard from "../PersonCard";
 
 export default function PeopleContainer() {
   const [people, setPeople] = useState([]);
@@ -48,6 +49,15 @@ export default function PeopleContainer() {
           );
         })}
       </div>
+      <Link to="/comp" 
+      className="
+        bg-green-400 
+        rounded-2xl 
+        hover:cursor-pointer 
+        hover:bg-green-900 
+        p-4"
+        >
+          Components</Link>
     </div>
   );
 }

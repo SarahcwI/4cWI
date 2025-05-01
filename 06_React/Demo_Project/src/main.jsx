@@ -8,7 +8,6 @@ import ReactDOM from "react-dom/client";
 import PeopleContainer from "./components/pages/PeopleContainer";
 import Components1 from "./components/pages/Components1";
 import "./index.css";
-import App from "./App";
 
 const router = createBrowserRouter([
   {

@@ -7,8 +7,6 @@ import PeopleContainer from "./components/pages/PeopleContainer";
 function App() {
   return (
     <>
-      {//<PeopleContainer/>
-      }
       <PeopleContainer/>
     </>
   );
